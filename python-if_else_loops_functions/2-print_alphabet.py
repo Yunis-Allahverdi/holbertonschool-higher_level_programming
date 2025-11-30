@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 for i in range(97, 123):
-    symbol = chr(i)
-    print(f"{symbol}", end="")
+    symbol = "{}".format(chr(i))
+    print(symbol, end="")
