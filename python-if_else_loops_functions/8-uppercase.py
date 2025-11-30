@@ -6,7 +6,6 @@ def uppercase(str):
             symbol = "{}".format(chr(letter))
         else:
             symbol = "{}".format(i)
-        if i == len(str) - 1:
-            print(symbol, end="\n")
-        else:
-            print(symbol, end="")
+
+        print(symbol, end="")
+    print("\n")
