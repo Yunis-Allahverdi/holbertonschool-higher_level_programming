@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
-    new_word = str[:n:]
-    print(new_word)
+    first_part = str[:n]
+    last_part = str[n+1:]
+    total = first_part + last_part
+    print(total)
