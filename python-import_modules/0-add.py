@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import add_0
+import add_0 as func
 if __name__ == "__main__":
-    result = add_0.add(1, 2)
+    result = func.add(1, 2)
     print("The result is {}".format(result))
