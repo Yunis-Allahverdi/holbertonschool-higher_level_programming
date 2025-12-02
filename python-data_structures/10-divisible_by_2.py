@@ -9,6 +9,7 @@ def divisible_by_2(my_list=[]):
     return list_result
 
 
+my_list = []
 list_result = divisible_by_2(my_list)
 i = 0
 while i < len(list_result):
