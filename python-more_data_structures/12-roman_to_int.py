@@ -2,7 +2,7 @@
 def roman_to_int(roman_string):
     int_list = []
     if roman_string is not str or roman_string is None:
-        return 0
+        return "hey"
     else:
         for i in roman_string:
             if i == "X":
