@@ -2,6 +2,7 @@
 def best_score(a_dictionary):
     if (len(a_dictionary) == 0):
         return None
+        exit()
     else:
         best_key = None
         max_val = 0
