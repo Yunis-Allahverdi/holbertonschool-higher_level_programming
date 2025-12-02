@@ -5,4 +5,5 @@ def no_c(my_string):
             print(i, end="")
         else:
             continue
+    print("\n", my_string)
     exit()
