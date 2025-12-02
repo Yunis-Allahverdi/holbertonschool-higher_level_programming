@@ -8,7 +8,7 @@ def best_score(a_dictionary):
         for i in list(sorted(a_dictionary)):
             if i > best_key:
                 best_key = i
-    print("Best score: {}".format(best_key))
+    print("Best: {}".format(best_key))
     exit()
 
 a_dictionary = {}
