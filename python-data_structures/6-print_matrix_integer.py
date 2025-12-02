@@ -1,7 +1,15 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    new_matrix = [[[x[i] for x in range(3)] for i in matrix]]
-    return '{:d}'.format(new_matrix)
+    for x in range(3):
+        for y in range(3):
+            print(matrix[x][y], end=" ")
+
+        print("\n")
 
 
-matrix = [[]]
+matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+]
+print_matrix_integer(matrix)
