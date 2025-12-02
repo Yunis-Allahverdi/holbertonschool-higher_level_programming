@@ -1,11 +1,15 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
     if len(tuple_a) == 0:
-        list(tuple_a).append(0, 0)
+        list_a = list(tuple_a)
+        list_a.append(0, 0)
+        tuple_a = list(list_a)
         a, b = tuple_a
         a1, b1 = tuple_b
     elif len(tuple_b) == 1:
-        list(tuple_a).append(0)
+        list_a = list(tuple_a)
+        list_a.append(0)
+        tuple_a = list(list_a)
         a, b = tuple_a
         a1, b1 = tuple_b
     else:
