@@ -3,6 +3,8 @@ def no_c(my_string):
     for i in my_string:
         if (i != 'c') and (i != 'C'):
             print(i, end="")
+            if i == len(my_string - 1):
+                print(i, end="\n")
         else:
             continue
     print(my_string)
