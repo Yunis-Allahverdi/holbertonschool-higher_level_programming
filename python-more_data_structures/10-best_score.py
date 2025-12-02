@@ -9,6 +9,6 @@ def best_score(a_dictionary):
             if i > best_key:
                 best_key = i
     print("Best score: {}".format(best_key))
-
+    exit()
 
 a_dictionary = {}
