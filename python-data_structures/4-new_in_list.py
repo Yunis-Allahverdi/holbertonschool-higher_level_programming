@@ -4,7 +4,7 @@ def new_in_list(my_list, idx, element):
         copy_list = my_list.copy()
         return copy_list
     else:
-        new_list = my_list.cop()
+        new_list = my_list.copy()
         new_list[idx] = element
         return new_list
         exit()
