@@ -22,12 +22,12 @@ def roman_to_int(roman_string):
         result = 0
         for i in range(len(int_list)):
             if i == len(int_list) - 1:
-                result += i
+                result += int_list[i]
                 break
             else:
                 if int_list[i] >= int_list[i+1]:
-                    result += i
+                    result += int_list[i]
                 else:
-                    result -= i
+                    result -= int_list[i]
 
         return result
