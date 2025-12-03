@@ -1,19 +1,17 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    count = 0
-    for i in my_list:
+    for i in range(x):
         try:
-            if not isinstance(i, int):
+            if not isinstance(my_list[i], int):
                 continue
             else:
-                print("{:d}".format(my_list[count]), end="")
-            count += 1
+                print("{:d}".format(my_list[i]), end="")
         except IndexError:
             raise
             break
 
     print()
-    return count
+    return x
 
 
 my_list = []
