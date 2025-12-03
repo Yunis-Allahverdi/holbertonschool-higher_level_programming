@@ -10,6 +10,7 @@ def safe_print_list(my_list=[], x=0):
         else:
             for i in range(x):
                 print(my_list[i], end="")
+            return x
     except IndexError as i:
         print(i)
 
