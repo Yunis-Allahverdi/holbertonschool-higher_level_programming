@@ -10,7 +10,9 @@ def safe_print_list(my_list=[], x=0):
         else:
             for i in range(x):
                 print(my_list[i], end="")
-            print("{:d}".format(x))
+
+            np_print = int(x)
+            print("{:d}".format(np_print))
     except IndexError as i:
         print(i)
 
