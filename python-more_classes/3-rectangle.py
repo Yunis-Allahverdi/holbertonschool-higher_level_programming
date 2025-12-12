@@ -62,4 +62,4 @@ class Rectangle:
 
                 txt = txt + '\n'
 
-            return txt
+            return txt[:-1]
