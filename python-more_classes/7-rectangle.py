@@ -62,7 +62,7 @@ class Rectangle:
         else:
             for i in range(self.height):
                 for j in range(self.width):
-                    txt = txt + print_symbol
+                    txt = txt + self.print_symbol
 
                 txt = txt + '\n'
 
