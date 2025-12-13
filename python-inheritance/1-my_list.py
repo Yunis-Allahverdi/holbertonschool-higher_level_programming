@@ -11,9 +11,8 @@ class MyList(list):
     '''
 
     def print_sorted(self):
-        sorte = self.copy()
-        sa = sorted(sorte)
-        print(sa)
+        self.sort()
+        print(self)
 
     def append(self, item):
         super().append(item)
