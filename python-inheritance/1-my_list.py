@@ -12,7 +12,7 @@ class MyList(list):
 
     def print_sorted(self):
         sore = self.copy()
-        sore = sore.sort()
+        sore.sort()
         print(sore)
 
     def append(self, item):
