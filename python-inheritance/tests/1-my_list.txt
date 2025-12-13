@@ -1,17 +1,14 @@
 The ``1-my_list.py`` module
-======================
+===========================
 
-Using ``MyClass``
--------------------
+Using ``MyList``
+-----------------
 
-This is an example text file in reStructuredText format.  First import
-``factorial`` from the ``example`` module:
+This is an example text file in reStructuredText format.
 
-    >>> from python-inheritance/1-my_list.py import MyClass
-
-Now use it:
-
-    >>> my_list = MyClass()
+    >>> MyList = __import__('1-my_list').MyList
+    >>> my_list = MyList()
     >>> my_list.append(1)
-    1
+    >>> my_list
+    [1]
 
