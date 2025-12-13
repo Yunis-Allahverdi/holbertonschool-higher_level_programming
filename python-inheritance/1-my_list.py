@@ -13,7 +13,7 @@ class MyList(list):
     def print_sorted(self):
         sorte = self.copy()
         sorte = sorte.sort()
-        print(sorte)
+        return sorte
 
     def append(self, item):
         super().append(item)
