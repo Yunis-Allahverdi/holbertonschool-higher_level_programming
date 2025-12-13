@@ -19,4 +19,4 @@ This is an example text file in reStructuredText format.
     >>> my_list.print_sorted()
     [-1, 1, 2]
     >>> my_list == new_list
-    True 
+    True
