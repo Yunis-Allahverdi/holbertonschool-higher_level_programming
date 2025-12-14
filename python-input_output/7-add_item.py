@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+
+import json
+import sys
+
+'''
+Module that does everything for JSON
+'''
+
+
+def save_to_json_file(my_obj, filename="example"):
+    '''
+    Save to json file function
+    '''
+
+    with open(filename, 'w') as f:
+        f.write(json.dumps(my_obj))
+
+
+def load_from_json_file(filename="example"):
+    '''
+    Save to json file function
+    '''
+
+    with open(filename, 'r') as f:
+        obj = f.read()
+        my_list = json.loads(obj)
+        return my_list
+
+
+my_obj = []
+for arg in sys.argv[1:]:
+    my_obj.append(arg)
