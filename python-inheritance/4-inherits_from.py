@@ -5,11 +5,13 @@ class is inherited or not
 '''
 
 
-def is_kind_of_class(obj, a_class):
+def inherits_from(obj, a_class):
     '''
     Function that checks obj
     is or not inherited from class
+    (directly or undirectly)
     '''
+
     if isinstance(obj, a_class):
         return True
     return False
