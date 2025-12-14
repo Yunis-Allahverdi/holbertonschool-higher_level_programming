@@ -31,6 +31,7 @@ def load_from_json_file(filename):
         my_list = json.loads(obj)
         return my_list
 
+
 try:
     my_list = load_from_json_file(filename)
 except FileNotFoundError:
