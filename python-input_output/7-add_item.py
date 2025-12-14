@@ -9,7 +9,7 @@ import sys
 import json
 
 
-def save_to_json_file(my_obj, filename="example"):
+def save_to_json_file(my_obj, filename):
     '''
     Save to json file function
     '''
@@ -18,7 +18,7 @@ def save_to_json_file(my_obj, filename="example"):
         f.write(json.dumps(my_obj))
 
 
-def load_from_json_file(filename="example"):
+def load_from_json_file(filename):
     '''
     Save to json file function
     '''
