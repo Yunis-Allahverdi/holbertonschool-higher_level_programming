@@ -14,4 +14,5 @@ def load_from_json_file(filename):
     '''
 
     with open(filename) as f:
-        my_list = json.loads(f.read())
+        obj = f.read()
+        my_list = json.loads(obj)
