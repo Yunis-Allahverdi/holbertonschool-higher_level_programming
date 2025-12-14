@@ -9,6 +9,6 @@ def read_file(filename=""):
     Function that reads file
     '''
 
-    with open('UTF8') as f:
+    with open(filename, encoding='UTF8') as f:
         for line in f:
             print(line, end="")
