@@ -14,6 +14,9 @@ def is_same_class(obj, a_class):
     if obj is None:
         return False
 
+    elif type(a_class) is type:
+        return False
+
     elif isinstance(obj, a_class) and type(obj) is not bool:
         return True
 
