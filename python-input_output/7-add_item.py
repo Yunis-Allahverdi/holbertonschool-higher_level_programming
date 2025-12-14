@@ -32,7 +32,6 @@ def load_from_json_file(filename):
         return my_list
 
 
-my_obj = []
 for arg in sys.argv[1:]:
     my_obj.append(str(arg))
 
