@@ -17,8 +17,8 @@ def save_to_json_file(my_obj, filename):
     Save to json file function
     '''
 
-    with open(filename, 'a') as f:
-        f.write(json.dump(my_obj))
+    with open(filename, 'w') as f:
+        f.write(json.dumps(my_obj))
 
 
 def load_from_json_file(filename):
@@ -28,7 +28,7 @@ def load_from_json_file(filename):
 
     with open(filename, 'r') as f:
         obj = f.read()
-        my_list = json.load(obj)
+        my_list = json.loads(obj)
         return my_list
 
 try:
