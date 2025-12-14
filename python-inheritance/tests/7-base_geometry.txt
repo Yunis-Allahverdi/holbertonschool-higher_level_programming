@@ -43,3 +43,4 @@ This is an example text file in reStructuredText format.
       File "/home/student_jail/student_repo/python-inheritance/7-base_geometry.py", line 18, in integer_validator
         raise TypeError("{} must be an integer".format(name))
     TypeError: age must be an integer
+    >>> bg.integer_validator("age", (4,))
