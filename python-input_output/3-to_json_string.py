@@ -4,6 +4,7 @@
 Module writes a function that
 returns JSON representation
 '''
+import json
 def to_json_string(my_obj):
     '''
     JSON function
