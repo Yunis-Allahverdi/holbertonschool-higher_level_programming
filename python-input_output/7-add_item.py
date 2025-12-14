@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
-import json
-import sys
-
 '''
 Module that does everything for JSON
 '''
+
+
+import sys
+import json
 
 
 def save_to_json_file(my_obj, filename="example"):
