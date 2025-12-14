@@ -9,3 +9,5 @@ This is an example text file in reStructuredText format.
     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("yunis", 12)
+    >>> bg.area()
+    Exception: area() is not implemented
