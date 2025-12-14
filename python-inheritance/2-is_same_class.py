@@ -11,6 +11,10 @@ def is_same_class(obj, a_class):
     obj is instance of a_class or not
     '''
 
-    if isinstance(obj, a_class) and type(obj) is not bool:
+    if obj is None:
+        return False
+
+    elif isinstance(obj, a_class) and type(obj) is not bool:
         return True
+
     return False
