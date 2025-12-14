@@ -31,7 +31,11 @@ def load_from_json_file(filename):
         my_list = json.loads(obj)
         return my_list
 
-my_obj = []
+try:
+    my_list = load_from_json_file(filename)
+except FileNotFoundError:
+    my_list = []
+
 my_obj.extend(sys.argv[1:])
 
 save_to_json_file(my_obj, filename)
