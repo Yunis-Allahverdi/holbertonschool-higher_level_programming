@@ -36,6 +36,6 @@ try:
 except FileNotFoundError:
     my_list = []
 
-my_obj.extend(sys.argv[1:])
+my_list.extend(sys.argv[1:])
 
-save_to_json_file(my_obj, filename)
+save_to_json_file(my_list, filename)
