@@ -31,8 +31,7 @@ def load_from_json_file(filename):
         my_list = json.loads(obj)
         return my_list
 
-
-for arg in sys.argv[1:]:
-    my_obj.append(str(arg))
+my_obj = []
+my_obj.extend(sys.argv[1:])
 
 save_to_json_file(my_obj, filename)
