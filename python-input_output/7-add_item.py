@@ -35,3 +35,5 @@ def load_from_json_file(filename):
 my_obj = []
 for arg in sys.argv[1:]:
     my_obj.append(str(arg))
+
+save_to_json_file(my_obj, filename)
