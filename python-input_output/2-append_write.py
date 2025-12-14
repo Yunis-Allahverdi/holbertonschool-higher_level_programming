@@ -4,7 +4,7 @@ Module that reads text file
 '''
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     '''
     Function that reads file
     '''
