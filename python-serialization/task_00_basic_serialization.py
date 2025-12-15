@@ -23,4 +23,4 @@ def load_and_deserialize(filename):
     from json file
     '''
     with open(filename, 'r', encoding='utf-8') as read_json:
-        return json.load(data, read_json)
+        return json.load(read_json)
