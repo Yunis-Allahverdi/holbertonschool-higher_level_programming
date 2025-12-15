@@ -22,7 +22,7 @@ class CustomObject:
     @classmethod
     def deserialize(cls, filename):
         with open(filename, 'rb') as r_file:
-            return cls(pickle.load(r_file))
+            print(pickle.load(r_file))
 
     def display(self):
         for key, value in self.attr_dict.items():
