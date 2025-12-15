@@ -21,8 +21,8 @@ class CustomObject:
 
     @classmethod
     def deserialize(cls, filename):
-        with open(filename, 'rb') as r_file:
-            print(pickle.load(r_file))
+        with open(filename, 'rb') as data:
+            print(pickle.load(data))
 
         obj = cls(data["Name"], data["Age"], data["Is Student"])
 
