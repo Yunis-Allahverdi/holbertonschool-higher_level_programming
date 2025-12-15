@@ -24,6 +24,9 @@ class CustomObject:
         with open(filename, 'rb') as r_file:
             print(pickle.load(r_file))
 
+        obj = cls(data["Name"], data["Age"], data["Is Student"])
+
+
     def display(self):
         for key, value in self.attr_dict.items():
             return "{}: {}".format(key, value)
