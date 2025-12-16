@@ -9,7 +9,7 @@ def convert_csv_to_json(file=""):
             csv_file = csv.DictReader(r_file)
         
         with open("data.json", 'w') as w_file:
-            json.dump(csv_file, w_file)
+            json.dump(list(csv_file), w_file)
 
     except OSError:
         print('file not found')
