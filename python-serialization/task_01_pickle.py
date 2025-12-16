@@ -22,10 +22,7 @@ class CustomObject:
     @classmethod
     def deserialize(cls, filename):
         with open(filename, 'rb') as data:
-            print(pickle.load(data))
-
-        obj = cls(data["Name"], data["Age"], data["Is Student"])
-
+            return pickle.load(data)
 
     def display(self):
         for key, value in self.attr_dict.items():
