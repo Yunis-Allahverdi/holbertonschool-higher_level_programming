@@ -21,10 +21,12 @@ class CustomObject:
 
     @classmethod
     def deserialize(cls, filename):
-        with open(filename, 'rb') as data:
-            d = pickle.load(data)
-        return cls(d["Name"], d["Age"], d["Is Student"])
-
+        try:
+            with open(filename, 'rb') as data:
+                d = pickle.load(data)
+            return cls(d["Name"], d["Age"], d["Is Student"])
+        except EOFError:
+            print('The file is incomplete or corrupted')
 
     def display(self):
         for key, value in self.attr_dict.items():
