@@ -13,6 +13,7 @@ def convert_csv_to_json(file=""):
 
     except OSError:
         print('file not found')
+        return False
 
     else:
         return True
