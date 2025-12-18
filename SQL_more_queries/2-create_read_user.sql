@@ -1,4 +1,4 @@
--- Write a script that creates MySQL server user and database
+-- Write a script that creates MySQL server user and database --
 
 CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
 
