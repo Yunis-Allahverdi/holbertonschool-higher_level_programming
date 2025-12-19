@@ -1,3 +1,4 @@
+-- Dump database and select --
 CREATE DATABASE hbtn_0d_tvshows;
 
 mysql -u root -p hbtn_0d_tvshows < hbtn_0d_tvshows.sql
