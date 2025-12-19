@@ -1,5 +1,4 @@
--- list of tables --
-CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+-- list of table --
 USE hbtn_0d_usa;
 
 SELECT id, name
