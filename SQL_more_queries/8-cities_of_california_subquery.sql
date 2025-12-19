@@ -1,5 +1,6 @@
 -- list of table --
 CREATE DATABASE IF NOT EXISTS hbtn_0d_usa;
+
 USE hbtn_0d_usa;
 
 SELECT id, name
@@ -10,4 +11,3 @@ WHERE state_id = (
     WHERE name = 'California'
 )
 ORDER BY id;
-
