@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 from calculator_1.py import add, sub, div, mul
-from sys import sys.argv
+from sys import argv
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
