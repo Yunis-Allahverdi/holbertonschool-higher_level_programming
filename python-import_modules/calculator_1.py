@@ -16,5 +16,3 @@ if __name__ == "__main__":
     sub(a, b)
     mul(a, b)
     div(a, b)
-
-
